@@ -270,20 +270,7 @@ En el notebook se realiza el siguiente flujo:
 
 ### Ejemplo de consumo desde un cliente Python
 
-```python
-import base64
-import requests
-
-url = "https://<tu-space>.hf.space/predict"
-
-with open("placa_test.jpg", "rb") as f:
-    img_b64 = base64.b64encode(f.read()).decode("utf-8")
-
-payload = {"image_base64": img_b64}
-resp = requests.post(url, json=payload)
-
-print(resp.json())
-```
+ver script en python `Inferencia_HuggingFace.py`
 
 ## 10. Flujo de uso recomendado
 

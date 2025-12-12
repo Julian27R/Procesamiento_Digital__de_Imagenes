@@ -232,7 +232,7 @@ pip3 install numpy
 
 El proyecto incluye un notebook de despliegue en Google Colab para publicar el detector en **HuggingFace Spaces** mediante una **API en FastAPI**.
 
- `HFS_Proyecto_Final.ipynb` *
+ `HFS_Proyecto_Final.ipynb` 
 
 En el notebook se realiza el siguiente flujo:
 

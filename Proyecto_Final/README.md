@@ -12,8 +12,9 @@ Este proyecto implementa un sistema completo de detección de placas vehiculares
 
 ---
 
+## Estructura de la carpeta Proyecto_Fianl
 ```text
-## Estructura del repositorio
+
 
 📂 Proyecto_Final/
 ├── README.md

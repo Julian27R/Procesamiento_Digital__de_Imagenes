@@ -58,7 +58,7 @@ Las fases principales incluidas en este repositorio son:
 
 ## 2. Dataset
 
-El dataset fue obtenido desde **Roboflow** llamado ****, incluyendo imágenes anotadas de placas vehiculares en distintos entornos, con las siguientes características:
+El dataset fue obtenido desde **Roboflow** llamado **License Plate Recognition** (https://universe.roboflow.com/pdi-v2wy7/license-plate-recognition-rxg4e-mpg7r/dataset/3), incluyendo imágenes anotadas de placas vehiculares en distintos entornos, con las siguientes características:
 
 - Formato YOLO
 - División train / valid / test

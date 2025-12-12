@@ -4,7 +4,7 @@
 
 **Nombre de la Práctica:** Proyecto Final
 
-**Curso:** Desarrollo de Sistemas IoT
+**Curso:** Procesamiento Digital de Imágenes 2025-2
 
 **Departamento:** Departamento de Ingeniería Electrica, Electronica y Computacion
 

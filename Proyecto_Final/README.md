@@ -14,19 +14,21 @@ Este proyecto implementa un sistema completo de detección de placas vehiculares
 
 ## Estructura del repositorio
 
-```text
-📂 Procesamiento_Digital__de_Imagenes/
-│── 📄 README.md
-│── 📓 deteccion-placas-v1.ipynb        # Notebook principal del proyecto
-│── 📓 deployment_hf_space.ipynb        # Notebook de despliegue en HuggingFace
-│── 📂 models/
-│      ├── best_plate_detector.pth      # Pesos nativos de PyTorch
-│      └── plate_detector_ts_cpu.pt     # Versión TorchScript optimizada
-│── 📂 raspberry/
-│      └── inferencia_raspberry.py      # Script de inferencia para Raspberry Pi
-│── 📂 utils/
-│      └── funciones_preprocesamiento.py (si aplica)
-```
+📂 Proyecto_Final/
+├── README.md
+├── deteccion-placas-v1.ipynb                 # Notebook principal: dataset, modelo, entrenamiento, métricas y exportación
+│
+├── 📂 Hugging_Face/
+│   ├──  HFS_Proyecto_Final.ipynb              # Notebook de despliegue en HuggingFace Space (Colab)
+│   └──  Inferencia_HuggingFace.py             # Cliente Python: consume /predict y dibuja detecciones
+│
+├── 📂 Pesos_del_Modelo/
+│   ├──  best_plate_detector.pth               # Pesos del modelo en PyTorch (state_dict)
+│   └──  plate_detector_ts_cpu.pt              # Modelo exportado a TorchScript (CPU) para despliegue
+│
+└── 📂 raspberry/
+    └──  inferencia_raspberry.py               # Inferencia en Raspberry Pi (TorchScript + OpenCV + NMS)
+`
 
 ## 1. Descripción general del proyecto
 
@@ -35,13 +37,21 @@ El objetivo del proyecto es desarrollar un sistema de detección automática de 
 Las fases principales incluidas en este repositorio son:
 
 **1. Carga y preparación del dataset** desde Roboflow.
+
 **2. Diseño del modelo de detección** basado en PyTorch.
+
 **3. Implementación de la función de pérdida personalizada.**
+
 **4. Entrenamiento y validación del modelo detector.**
+
 **5. Evaluación mediante métricas de desempeño.**
+
 **6. Exportación a formato TorchScript** para despliegue eficiente
+
 **7. Comparación entre modelo PyTorch original (.pth) y TorchScript (.pt)**
+
 **8. Implementación de un script de inferencia en Raspberry Pi.**
+
 **9. Despliegue del modelo en un HuggingFace Space mediante API.**
 
 ## 2. Dataset

@@ -12,6 +12,7 @@ Este proyecto implementa un sistema completo de detección de placas vehiculares
 
 ---
 
+```text
 ## Estructura del repositorio
 
 📂 Proyecto_Final/
@@ -28,7 +29,7 @@ Este proyecto implementa un sistema completo de detección de placas vehiculares
 │
 └── 📂 raspberry/
     └──  inferencia_raspberry.py               # Inferencia en Raspberry Pi (TorchScript + OpenCV + NMS)
-`
+```
 
 ## 1. Descripción general del proyecto
 

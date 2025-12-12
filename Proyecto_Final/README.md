@@ -272,6 +272,65 @@ En el notebook se realiza el siguiente flujo:
 
 ver script en python `Inferencia_HuggingFace.py`
 
+### Ejecución del cliente Python para HuggingFace Space (VS Code)
+
+### 1️⃣ Crear el script en VS Code
+
+1. Abre **Visual Studio Code** en la carpeta de tu proyecto.
+    
+2. Crea un archivo nuevo llamado `infer_plate_api.py`.
+ 
+3. Copia y pega dentro de este archivo el script de inferencia proporcionado.
+
+4. Verifica que la configuración inicial sea correcta:
+
+```python
+API_URL_DEFAULT = "https://JulianGR27-DetectionPlacas.hf.space/predict"
+MODEL_IMAGE_SIZE = (416, 416)
+```
+
+### 2️⃣ Instalar dependencias en el entorno de VS Code
+
+1. Abre la terminal integrada:
+   
+Menú → Terminal → New Terminal
+
+2. Instala las dependencias necesarias:
+
+```bash
+pip install requests pillow matplotlib
+```
+
+**Nota:** Si usas un entorno virtual (venv o conda), asegúrate de activarlo antes de ejecutar el comando.
+
+### 3️⃣ Ejecutar el script con argumentos
+
+Desde la terminal integrada, ubicado en la carpeta donde se encuentra `infer_plate_api.py`, ejecuta:
+
+**Inferencia básica:**
+
+```bash
+python infer_plate_api.py --image ./Carros3.png
+```
+
+**Imagen ubicada en otra carpeta (ejemplo en Windows):**
+
+```bash
+python infer_plate_api.py --image "D:/imagenes/Carros3.png"
+```
+
+**Guardar la imagen con las detecciones:**
+
+```bash
+python infer_plate_api.py --image ./Carros3.png --save ./resultado.png
+```
+
+### Resultados esperados
+
+- **En la terminal:** se muestran las detecciones encontradas, junto con sus puntajes y coordenadas.
+- **En pantalla:** se abre una ventana de `matplotlib` con la imagen procesada y las cajas delimitadoras.
+- **Archivo de salida:** si se usa el parámetro `--save`, se guarda la imagen con las detecciones dibujadas.
+
 ## 10. Flujo de uso recomendado
 
 Para reproducir el proyecto de principio a fin, se recomienda seguir el siguiente flujo de trabajo:

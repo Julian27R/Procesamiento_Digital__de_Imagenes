@@ -171,11 +171,6 @@ Para analizar el impacto de la exportación a TorchScript, se compararon ambas v
 2. **Velocidad de inferencia (benchmark)**  
    Se midió el tiempo promedio de inferencia (forward) de ambos modelos usando la misma entrada dummy, incluyendo *warmup* y múltiples ejecuciones para estimar media y desviación estándar.
 
-3. **Consistencia numérica (opcional / si aplica en el notebook)**  
-   Cuando se realiza, se comparan las salidas de ambos modelos sobre las mismas entradas calculando:
-   - `max |Δ|`: diferencia absoluta máxima
-   - `mean |Δ|`: diferencia absoluta promedio
-
 ###  Resultados observados (ejemplo)
 
 - **Tamaño:** no se evidenció reducción significativa (los archivos quedaron con tamaños similares).
@@ -237,7 +232,7 @@ pip3 install numpy
 
 El proyecto incluye un notebook de despliegue en Google Colab para publicar el detector en **HuggingFace Spaces** mediante una **API en FastAPI**.
 
-📄 `HFS_Proyecto_Final.ipynb` *
+ `HFS_Proyecto_Final.ipynb` *
 
 En el notebook se realiza el siguiente flujo:
 

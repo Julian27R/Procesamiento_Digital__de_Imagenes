@@ -190,7 +190,7 @@ El repositorio incluye un script de inferencia para ejecutar el detector de plac
 
 ### Archivo incluido
 
-`raspberry/inference_plate_detector_ts.py` *(ajusta el nombre/ruta si en tu repo es diferente)*
+`raspberry/inferencia_Raspberry.py` 
 
 ### Funcionalidades del script
 
@@ -318,7 +318,7 @@ Para reproducir el proyecto de principio a fin, se recomienda seguir el siguient
 
 1. Abrir el notebook de despliegue en HuggingFace.
 2. Subir el modelo TorchScript.
-3. Verificar el funcionamiento de la API usando solicitudes de inferencia.
+3. Verificar el funcionamiento de la API usando solicitudes de inferencia con el script de python `Inferencia_HuggingFace.py`.
 4. Comprobar que retorna detecciones correctas (coordenadas, score, clase).
 
 ---
